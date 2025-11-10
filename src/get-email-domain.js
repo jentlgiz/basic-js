@@ -11,7 +11,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function getEmailDomain(email) {
-  const symbol = email.lastIndexOf('@');
+  const symbol = email.split('@');
   return symbol[symbol.length - 1];
 }
 
